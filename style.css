@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    background-image: url("img/bannerimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.welcome {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welcome-start {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 40px;
+}
+
+.welcome-title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 26px;
+}
+
+.welcome-sub-title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 20px;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+.navi {
+    position: relative;
+    top: -200px;
+    width: 100%;
+    transition: top 0.8s linear;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.active {
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.navi-list {
+    display: flex;
+    align-items: stretch;
+}
+
+.navi-item {
+    flex-grow: 1;
+    list-style: none;
+}
+
+.navi-link {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.burger {
+    position: absolute;
+    right: 13px;
+    top: 100%;
+    color: white;
+    font-size: 34px;
+    transition: 0.4s;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.fas {
+    display: none;
+    z-index: 9999;
+}
+
+.show {
+    display: block;
+    z-index: 9999;
+}
+
+.about-me {
+    background-color: rgb(179, 179, 255);
+    
+}
+
+.about-me-start {
+    font-weight: 600;
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+}
+
+.about-me-end {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 800;
+    padding: 10px 15px 20px;
+    text-align: center;
+}
+
+.languages-title {
+    margin: 20px auto 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.icons {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-icon {
+    padding: 10px;
+    width: 33%;
+    margin: 0 5px;
+}
+
+.icon {
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    filter: brightness(50%);
+    transform: scale(1.1);
+}
+
+.hobbies {
+    color: white;
+    overflow: hidden;
+    background-color: rgb(3, 26, 46);
+    padding-bottom: 20px;
+}
+
+.hobbies-title {
+    padding: 0 15px;
+    margin: 20px 0 10px 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hobby {
+    position: relative;
+    margin: 5px auto;
+    height: 45vh;
+    width: 100%;
+}
+
+.hobby-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    opacity: 0.7;
+}
+
+.hobby-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 28px;
+    text-align: center;
+    color: rgb(255, 254, 254);
+    z-index: 1;
+    animation: texting 4s linear infinite;
+}
+
+.projects {
+    overflow: hidden;
+    background-color: rgb(179, 179, 255);
+    padding: 20px 0 20px;
+}
+
+.projects-title {
+    padding: 0 15px;
+    margin: 20px 0 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.web {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px auto;
+    padding: 0 10px 0 15px;
+}
+
+.project-img {
+    width: 40%;
+    align-self: center;
+
+}
+
+.project-img img {
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+}
+
+.about-project {
+    width: 60%;
+    margin-left: 15px;
+    align-self: center;
+}
+
+.about-project-text {
+    font-weight: 600;
+}
+
+.project-link {
+    color: rgb(3, 26, 46);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.socials {
+    background-color: rgb(3, 26, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 50px 0 40px;
+}
+
+.socials-title {
+    padding: 20px 0 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social {
+    width: 33%;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fab {
+    color: white;
+    font-size: 70px;
+}
+
+.foot {
+    background-color: rgb(3, 26, 46);
+}
+
+.foot-text {
+    padding-top: 80px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+@media ( orientation: landscape ) and (min-width:360px){
+    
+    .banner{
+        height: 80vh;
+    }
+    .welcome-title{
+        top: 60%;
+    }
+
+    .welcome-sub-title{
+        top: 85%;
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 360px) {
+
+    .welcome-start {
+        font-size: 44px;
+    }
+
+    .welcome-title {
+        font-size: 30px;
+    }
+
+    .welcome-sub-title {
+        top: 80%;
+        font-size: 24px;
+        padding: 0 3px;
+    }
+
+    .burger {
+        font-size: 34px;
+    }
+
+    .languages-title {
+        font-size: 32px;
+    }
+
+    .hobby-title {
+        font-size: 30px;
+    }
+
+    .hobbies-title {
+        font-size: 32px;
+    }
+
+    .fab {
+        font-size: 80px;
+    }
+
+    .projects-title {
+        font-size: 32px;
+    }
+
+    .socials-title {
+        font-size: 32px;
+    }
+
+}
+
+@media (min-width: 520px) {
+
+    .welcome-start {
+        font-size: 50px;
+        top: 35%;
+    }
+
+    .welcome-title {
+        font-size: 34px;
+        top: 55%;
+    }
+
+    .welcome-sub-title {
+        top: 83%;
+        font-size: 28px;
+        padding: 0 3px;
+    }
+
+    .navi-link {
+        font-size: 30px;
+    }
+
+    .burger {
+        font-size: 40px;
+    }
+
+    .about-me-start {
+        font-size: 30px;
+    }
+
+    .languages-title {
+        font-size: 44px;
+    }
+
+    .about-me-end {
+        font-size: 40px;
+    }
+
+    .container-icon {
+        width: 35%;
+        padding: 20px;
+    }
+
+    .hobby {
+        width: 90%;
+        height: 350px;
+    }
+
+    .hobbies-title {
+        font-size: 40px;
+    }
+
+    .hobby-title {
+        font-size: 34px;
+    }
+
+    .projects-title {
+        font-size: 40px;
+    }
+
+    .about-project-text {
+        font-size: 26px;
+    }
+
+    .socials-title {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .fab {
+        font-size: 100px;
+    }
+
+    .foot-text {
+        font-size: 34px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .banner {
+        height: 60vh;
+    }
+
+    .welcome-start {
+        top: 40%;
+        font-size: 68px;
+    }
+
+    .welcome-title {
+        top: 65%;
+        font-size: 40px;
+    }
+
+    .welcome-sub-title {
+        top: 85%;
+        font-size: 32px;
+    }
+
+    .navi-link {
+        font-size: 33px;
+    }
+
+    .burger {
+        font-size: 52px;
+    }
+
+    .about-me {
+        padding-top: 60px;
+    }
+
+    .about-me-start {
+        font-size: 32px;
+    }
+
+    .languages-title {
+        font-size: 52px;
+    }
+
+    .container-icon {
+        width: 22%;
+
+    }
+
+    .about-me-end {
+        font-size: 42px;
+    }
+
+    .hobbies-title {
+        font-size: 48px;
+    }
+
+    .hobby {
+        width: 90%;
+        height: 400px;
+    }
+
+    .projects-title {
+        font-size: 48px;
+    }
+
+    .about-project-text {
+        font-size: 22px;
+    }
+
+    .socials-title {
+        margin-bottom: 40px;
+        font-size: 48px;
+
+    }
+
+    .social-container {
+        align-items: center;
+        align-content: space-around;
+        flex-direction: row;
+        padding: 20px 0 20px;
+    }
+
+    .fab {
+        margin: 0 50px;
+        font-size: 120px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .banner {
+        height: 70vh;
+    }
+
+    .welcome-start {
+        font-size: 72px;
+    }
+
+    .welcome-title {
+        font-size: 44px;
+    }
+
+    .welcome-sub-title {
+        font-size: 36px;
+    }
+
+    .languages-title {
+        margin-top: 50px;
+        font-size: 54px;
+    }
+
+    .burger {
+        font-size: 60px;
+    }
+
+    .navi-link {
+        font-size: 42px;
+    }
+
+    .about-me-start {
+        font-size: 28px;
+    }
+
+    .container-icon {
+        width: 17%;
+    }
+    
+    .about-me-end {
+        font-size: 42px;
+    }
+
+    .hobby {
+        width: 85%;
+        height: 70vh;
+    }
+
+    .hobbies-title {
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+
+    .hobby-title {
+        font-size: 44px;
+    }
+
+    .projects-title {
+        font-size: 54px;
+    }
+
+    .projects {
+        padding-bottom: 50px;
+    }
+
+    .project-img {
+        width: 30%;
+    }
+
+    .about-project-text {
+        font-size: 24px;
+    }
+
+    .project-img img {
+        width: 80%;
+    }
+
+    .socials-title {
+        font-size: 54px;
+    }
+
+    .fab {
+        font-size: 100px;
+    }
+
+    .foot {
+        padding-top: 20px;
+    }
+
+    .foot-text {
+        font-size: 44px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .banner {
+        height: 75vh;
+    }
+
+     .welcome-start {
+        font-size: 100px;
+    }
+
+    .navi-link {
+        font-size: 40px;
+    }
+
+    .about-me-start {
+        padding-top: 60px;
+    }
+
+    .languages-title {
+        padding-bottom: 30px;
+    }
+
+    .about-me-end {
+        font-size: 46px;
+    }
+
+    .hobbies {
+        padding: 70px 0 80px;
+    }
+
+    .hobby {
+        width: 80%;
+        height: 80vh;
+    }
+
+    .projects {
+        padding: 50px 0 30px;
+    }
+
+    .web {
+        margin-top: 15px;
+    }
+
+    .socials-title {
+        margin-bottom: 80px;
+    }
+
+    .foot {
+        padding-top: 100px;
+    }
+
+}
+
+@keyframes texting {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+        opacity: 0;
+    }
+}
