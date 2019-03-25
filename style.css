@@ -261,6 +261,7 @@
 
 .about-project-text {
     font-weight: 600;
+    font-size: 14px;
 }
 
 .project-link {
@@ -439,7 +440,7 @@
     }
 
     .about-project-text {
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .socials-title {
@@ -500,7 +501,6 @@
 
     .container-icon {
         width: 22%;
-
     }
 
     .about-me-end {
