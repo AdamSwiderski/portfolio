@@ -130,12 +130,12 @@
 .about-me-start {
     font-weight: 600;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px 20px 0 20px;
 }
 
 .about-me-end {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 26px;
     font-weight: 800;
     padding: 10px 15px 20px;
@@ -153,7 +153,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .container-icon {
@@ -317,6 +317,12 @@
     text-align: center;
 }
 
+.icon-designed{
+    font-size: 10px;
+    color: rgb(2, 51, 94);
+    text-decoration: none;
+}
+
 @media ( orientation: landscape ) and (min-width:360px){
     
     .banner{
@@ -418,7 +424,7 @@
     }
 
     .container-icon {
-        width: 35%;
+        width: 30%;
         padding: 20px;
     }
 
@@ -576,11 +582,11 @@
     }
 
     .about-me-start {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .container-icon {
-        width: 17%;
+        width: 15%;
     }
     
     .about-me-end {
